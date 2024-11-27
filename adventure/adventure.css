@@ -1,0 +1,186 @@
+/* ========================== כלליים =========================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: silver;
+    font-family: sans-serif;
+}
+
+.container_fluid {
+    width: 100%;
+    padding: 0 16px;
+}
+
+/* ========================== Header =========================== */
+
+header {
+    min-height: 90px;
+    background: black;
+    color: white;
+}
+
+header .container {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: -25px;
+    top: -28px;
+}
+
+header nav {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header nav a {
+    color: white;
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+header nav a:hover {
+    color: red;
+    font-size: 40px;
+    border-radius: 5px;
+}
+
+header button {
+    color: red;
+    background: black;
+    margin-right: 16px;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+/* ========================== פס הביניים =========================== */
+
+.strip {
+    background: skyblue;
+    min-height: 500px;
+    background-image: url('images/headPicture.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+}
+
+/* ========================== עיצוב הכרטיסים =========================== */
+
+.card {
+    margin: 10px;
+    width: 300px;
+    height: 350px; /* גובה אחיד */
+    border: 2px solid red;
+    border-radius: 10px;
+    background: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* ריווח שווה בין האלמנטים */
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* מונע גלישה */
+    transition: all 0.3s ease; /* מעבר חלק */
+}
+
+/* אפקט "hover" על הכרטיס */
+.card:hover {
+    transform: scale(1.05); /* הגדלה קלה */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* צל עמוק יותר */
+}
+
+/* תמונה בכרטיס */
+.card img {
+    width: 250px; /* רוחב אחיד */
+    height: 150px; /* גובה אחיד */
+    object-fit: contain; /* שמירה על פרופורציות */
+    margin: auto; /* ממרכז את התמונה */
+    display: block; /* יישור אחיד */
+    border-bottom: 2px solid red; /* גבול תחתון */
+    margin-bottom: 10px; /* רווח מתחת לתמונה */
+}
+
+/* תוכן הכרטיס */
+.card_content {
+    padding: 15px;
+}
+
+.card_price {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* כפתורים */
+.card_button {
+    background: linear-gradient(45deg, #ff4d4d, #ff1a1a); /* גרדיאנט צבעוני */
+    border: none;
+    color: white;
+    border-radius: 25px; /* כפתור עגול יותר */
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* אפקט חלק */
+    cursor: pointer;
+}
+
+.card_button:hover {
+    background: linear-gradient(45deg, #ff6666, #ff3333); /* שינוי צבע */
+    transform: scale(1.1); /* הגדלה קלה */
+}
+
+/* גבולות צבעוניים ייחודיים לכרטיסים */
+.card:nth-child(1) {
+    border-color: #ff4d4d; /* אדום */
+}
+
+.card:nth-child(2) {
+    border-color: #4d94ff; /* כחול */
+}
+
+.card:nth-child(3) {
+    border-color: #4dff4d; /* ירוק */
+}
+
+.card:nth-child(4) {
+    border-color: #ffd24d; /* צהוב */
+}
+
+/* ========================== Main =========================== */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* רווח בין הכרטיסים */
+    padding: 20px;
+    background-image: url(images/headPicture7.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 800px;
+    height: auto;
+}
+
+/* ========================== Footer =========================== */
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

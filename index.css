@@ -1,0 +1,148 @@
+/* כללי */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* כותרת עליונה */
+.header {
+    background-color: #f8f8f8;
+    border-bottom: 2px solid red;
+    padding: 15px 30px; /* יותר מרווחים */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 28px; /* הגודל יותר גדול */
+    color: red;
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px; /* יותר מרווחים */
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+.test-drive {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px; /* יותר מרווחים */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.test-drive:hover {
+    background-color: darkred;
+}
+
+/* אזור מרכזי */
+.main-banner {
+    text-align: center;
+    padding: 100px 20px; /* יותר רווחים למעלה ולמטה */
+    background-image: url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    color: white; /* טקסט לבן כדי להתבלט על רקע כהה */
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.main-banner h2 {
+    font-size: 42px; /* גודל גדול יותר */
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* הצללה לטקסט */
+}
+
+.main-banner p {
+    font-size: 22px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* הצללה לטקסט */
+}
+
+/* כרטיסים */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* רווחים יותר גדולים בין הכרטיסים */
+    padding: 30px 20px;
+    flex-wrap: wrap; /* אם יש הרבה כרטיסים, הם יעברו לשורה חדשה */
+    margin-top: 50px; /* מרווח עליון להפרדה */
+}
+
+.card {
+    width: 300px; /* גודל אחיד */
+    border: 3px solid red;
+    border-radius: 15px; /* פינות יותר מעוגלות */
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* הצללה יפה */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* למנוע שהתמונה תימתח או תתכופף */
+}
+
+.card-text {
+    padding: 15px;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 22px;
+    color: red;
+}
+
+/* בעת hovering על כרטיס */
+.card:hover {
+    transform: scale(1.05); /* גדילה עדינה */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* הצללה יותר בולטת */
+}
+
+/* עיצוב כפתור "נסיעת מבחן" */
+.test-drive {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 25px; /* יותר מעוגל */
+    padding: 15px 30px; /* יותר מרווחים */
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* רווחים בין האותיות */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.test-drive:hover {
+    background-color: darkred;
+}
+
+/* עיצוב התמונה */
+.main-banner img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
