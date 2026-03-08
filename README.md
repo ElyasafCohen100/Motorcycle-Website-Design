@@ -1,4 +1,8 @@
-# Motorcycle Website Design 🏍️🌐🎨
+<p align="center">
+  <img src="6.png"/>
+</p> 
+
+# Motorcycle Website Design 🏍️🌐🎨 
 
 ![GitHub stars](https://img.shields.io/github/stars/ElyasafCohen100/Motorcycle-Website-Design?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/ElyasafCohen100/Motorcycle-Website-Design?style=social)
@@ -91,7 +95,23 @@ No server or installation is required – it runs directly in your browser.
 
 ## 📸 Screenshots 📸
 
-Screenshots of the website will be added here soon.
+### 🏠Home Page:
+![Home](screenshots/home.png)
+
+---
+
+### 🏁Sport Bikes:
+![Sport](screenshots/sport.png)
+
+---
+
+### 🧭Adventure Bikes:
+![Adventure](screenshots/adventure.png)
+
+---
+
+### 🛠Custom Bikes:
+![Custom](screenshots/custom.png)
 
 ---
 
@@ -106,11 +126,17 @@ This project was created to practice **frontend web development basics**, focusi
 
 ---
 
-## 🧑‍💻 Created By 🧑‍💻
+## Create with good vibes by: 🎉
 
-Elyasaf Cohen 🧙‍♂️
-
-[![GitHub](https://img.shields.io/badge/GitHub-ElyasafCohen100-0A66C2?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/ElyasafCohen100)
+<p align="center">
+  <img src="me.jpeg" width="600">
+</p>
+                             
+<p align="center">                    
+  <a href="https://github.com/ElyasafCohen100">
+     <img src="https://img.shields.io/badge/GitHub-Elyasaf_Cohen-black?style=for-the-badge&logo=github">
+  </a>
+</p>
 
 ---
 
